@@ -46,6 +46,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'projedeneme'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C2F0A06BA52B4790B06605DFFB58CA6B }}
-          package: .
+          package: ./dist/msdocs-javascript-nodejs-server
