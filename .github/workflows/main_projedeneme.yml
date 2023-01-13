@@ -48,4 +48,4 @@ jobs:
           app-name: 'projedeneme'
           slot-name: 'production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C2F0A06BA52B4790B06605DFFB58CA6B }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH_C2F0A06BA52B4790B06605DFFB58CA6B }}
+          package: .
