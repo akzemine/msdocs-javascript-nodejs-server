@@ -47,4 +47,4 @@ jobs:
         with:
           app-name: 'projedeneme'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C2F0A06BA52B4790B06605DFFB58CA6B }}
-          package: ./build/msdocs-javascript-nodejs-server
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
